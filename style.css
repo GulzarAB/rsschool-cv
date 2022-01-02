@@ -1,8 +1,14 @@
+.container {
+    max-width: 500px;
+    margin-left: 30%;
+
+}
+
 h1 {
     color: aquamarine;
 }
 
 p {
     font-size: 24px;
-    color: red;
+    color: #000;
 }
