@@ -1,0 +1,17 @@
+.container {
+    max-width: 500px;
+}
+.cv_wrapper{
+    display: block;
+    justify-content: center;
+
+}
+
+h1 {
+    color: aquamarine;
+    
+}
+
+h3 {
+    color: cadetblue;
+}
