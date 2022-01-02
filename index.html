@@ -26,7 +26,40 @@
         <li> Adobe Photoshop, Illustrator, Figma</li>
     </ul>
     <hr/>
-    
+    <h3>Code example:</h3>
+    <p><strong></strong>From leetcode.com</strong>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        You can return the answer in any order.</p>
+    <script>const nums = [2, 7, 11, 15];
+        const target = 9;
+        
+        let twoSum = function(nums,target) {
+            let map = new Map;
+            for (let i=0; i<nums.length;i++) {
+                let complement = target-nums[i];
+                if(map.has(complement)) {
+                    return[map.get(complement),i]
+                }
+                map.set(nums[i],i);
+            }
+            
+        }
+        console.log(twoSum(nums,target));
+</script>
+<hr/>
+<h3>Courses:</h3>
+<ul>
+    <li>HTML, CSS, JS and React at **Jyldyz Academy** (completed)</li>
+    <li>Web Design on *freecodecamp.com* (completed)</li>
+    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+</ul>
+<hr/>
+<h3>Languages:</h3>
+<ul>
+    <li>English: Advanced </li>
+    <li>Korean: Basic </li>
+    <li>Turkish: Advanced </li>
+</ul>
     
 </body>
 </html>
