@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS School Task</title>
+    <link rel="stylesheet" href="/rsschool-cv/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul class="nav-menu" >
+                    <li class="nav-item">
+                        <a href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#codeexample">Code example</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#languages">Languages</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="welcome" class="welcome">
+              <img width="200"  src="/rsschool-cv/img/glz.png" alt="my photo">
+              <h1>Hello! I'm Gulzar!</h1>
+              <h2>Junior Frontend Developer</h2>
+            </section>
+
+            <section id="contacts" class="contacts">
+                <h2>Contacts:</h2>
+                <ul class="contacts-list">
+                    <li>Telegram: @abdullabaeva</li>
+                    <li>E-mail: gulzar.abdullabaeva.kk@gmail.com</li>
+                    <li>Instagram: @gulzarcooks</li>
+                </ul>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2>Skills and Proficiency:</h2>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript Basics</li>
+                    <li> Git, GitHub</li>
+                    <li> VS Code</li>
+                    <li> Adobe Photoshop, Illustrator, Figma</li>
+                </ul>
+            </section>
+
+            <section id="example" class="example"> 
+                <h2>Code example:</h2>
+                <p><i>From leetcode.com </i>
+                    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+                    You may assume that each input would have exactly one solution, and you may not use the same element twice.
+                    You can return the answer in any order.</p>
+                    <pre>
+                       <code> const nums = [2, 7, 11, 15];
+                        const target = 9;
+                        
+                        let twoSum = function(nums,target) {
+                            let map = new Map;
+                            for (let i=0; i=nums.length;i++) {
+                                let complement = target-nums[i];
+                                if(map.has(complement)) {
+                                    return[map.get(complement),i]
+                                }
+                                map.set(nums[i],i);
+                            }
+                            
+                        }
+                        console.log(twoSum(nums,target));
+                       </code>
+                    </pre>
+            </section>
+
+            <section id="courses" class="courses">
+                <h2>Courses:</h2>
+                <ul>
+                    <li>HTML, CSS, JS and React at **Jyldyz Academy** (completed)</li>
+                    <li>Web Design on *freecodecamp.com* (completed)</li>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                </ul>
+            </section>
+
+            <section id="languages" class="languages">
+                <h2>Languages:</h2>
+                <ul>
+                    <li>English: Advanced </li>
+                    <li>Korean: Basic </li>
+                    <li>Turkish: Advanced </li>
+                </ul>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer-icons">
+                <div class="github">
+                    <a class="github-icon" href="https://github.com/GulzarAB" target="blank">
+                        <img width="35" src="/rsschool-cv/img/github.png" alt="github_logo">
+                    </a>
+                </div>
+                <span>2022</span>
+                <div class="rsschool">
+                    <a class="rs-icon" href="https://rs.school/js/" target="blank">
+                        <img width="100" src="/rsschool-cv/img/rs_school_js.svg" alt="rsschool_logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+        <!-- <img src="/rsschool-cv/img/glz.png" alt="gulzar">
+         <h1>Gulzar Abdullabaeva</h1>
+         <p>Gulzar Abdullabaeva was born in 1993. Enjoy teching English,love kids. Nowdays coding part of her life!</p>
+    </div>
+    <hr/>
+    <div class="cv_wrapper">
+    <h3>Briefly About Myself:</h3>
+    <p>Having started my career as a layout designer in a local newspaper with minimum skills, I became profficient in printing design.
+        My keen interest in printing technologies led me to working as a Prepress and DTP Engineer in the largest printing house in my city,
+        where I continued self-learning, examining the process of creating wine and food labels, magazines and other printed goods.
+        
+        Three years ago I’ve become passionate about retouching. I’ve mastered different retouching techniques,
+        learned to work with graphic tablet, become an advanced Photoshop user and found my first job as a retoucher.</p>
+        <hr/>
+    <h3>Skills and Proficiency:</h3>
+    <ul>
+        <li>HTML5, CSS3</li>
+        <li>JavaScript Basics</li>
+        <li> Git, GitHub</li>
+        <li> VS Code</li>
+        <li> Adobe Photoshop, Illustrator, Figma</li>
+    </ul>
+    <hr/>
+    <h3>Code example:</h3>
+    <p><strong></strong>From leetcode.com</strong>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        You can return the answer in any order.</p>
+    <script>const nums = [2, 7, 11, 15];
+        const target = 9;
+        
+        let twoSum = function(nums,target) {
+            let map = new Map;
+            for (let i=0; i<nums.length;i++) {
+                let complement = target-nums[i];
+                if(map.has(complement)) {
+                    return[map.get(complement),i]
+                }
+                map.set(nums[i],i);
+            }
+            
+        }
+        console.log(twoSum(nums,target));
+</script>
+<hr/>
+<h3>Courses:</h3>
+<ul>
+    <li>HTML, CSS, JS and React at **Jyldyz Academy** (completed)</li>
+    <li>Web Design on *freecodecamp.com* (completed)</li>
+    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+</ul>
+<hr/>
+<h3>Languages:</h3>
+<ul>
+    <li>English: Advanced </li>
+    <li>Korean: Basic </li>
+    <li>Turkish: Advanced </li>
+</ul>
+   
+ </div>    -->
